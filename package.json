@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -15,6 +17,13 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@storybook/addon-actions": "^6.5.0-alpha.5",
+    "@storybook/addon-essentials": "^6.5.0-alpha.5",
+    "@storybook/addon-links": "^6.5.0-alpha.5",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.5",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.5",
+    "@storybook/vue3": "^6.5.0-alpha.5",
     "@vue/cli-plugin-babel": "~5.0.0-rc.1",
     "@vue/cli-plugin-eslint": "~5.0.0-rc.1",
     "@vue/cli-plugin-unit-jest": "~5.0.0-rc.1",
@@ -23,13 +32,17 @@
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "autoprefixer": "^10.4.0",
     "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-storybook": "^0.5.5",
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
     "postcss": "^8.4.5",
     "prettier": "^2.4.1",
-    "tailwindcss": "^3.0.7"
+    "tailwindcss": "^3.0.7",
+    "vue-loader": "^16.8.3",
+    "webpack": "5"
   }
 }
